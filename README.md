@@ -15,7 +15,7 @@ Optical flow methods try to calculate the motion between two image frames which 
 
   ### Lucas-Kanade method
   Assumptions:
-  1. The motion is essentially constant in a local neighborhood of pixels(window) 
+  1. The motion is essentially constant in a local neighborhood of pixels(window). We can choose the points to track. 
   2. The displacement of the image contents between two frames is small. 
   
   That is why, Lucas-kanade method only works for small movements and fails when there is large motion. However, the OpenCV     implementation of this algorithm makes use of the concept of Optical pyramids where it tries to detect large motion on a     reduced resolution. 
